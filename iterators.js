@@ -5,7 +5,7 @@
  * - Logs every element of the array
  ************************************/
 const logger = function (array) {
-array.array.forEach(element => console.log(element));
+array.forEach((element) => console.log(element));
 };
 
 /*************************************
@@ -50,8 +50,13 @@ const hottestDays = function (temperatures, threshhold) {
  *       all previous functions
  *******************************************/
 const logHottestDays = function (temperatures, threshhold) {
-  let highTemps = logger(toCelsius(hottestDays(temperatures,threshhold)));
+  logger(toCelsius(hottestDays(temperatures,threshhold)));
 };
+  
+  /*let highTemps = toCelsius(hottestDays(temperatures,threshhold));
+  let highTempsC = toCelsius(highTemps);
+  logger(highTempsC);
+};*/
 
 /* Uncomment the following lines to test your code... */
 
